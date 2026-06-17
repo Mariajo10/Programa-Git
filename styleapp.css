@@ -1,0 +1,348 @@
+/* RESETEA ESPACIOS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}	
+
+
+/* BODY */
+body{
+  font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+/* LOGO CONTAINER */
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* IMAGEN LOGO */
+.logo-container img{
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* COLORES */
+.azul{
+  color: #07163d;
+}
+
+.verde{
+  color: #11a00e;
+}
+}
+  /* separa elementos */
+  justify-content: space-between;
+
+  /* centra vertical */
+  align-items: center;
+
+  padding: 20px 60px;
+
+  background: white;
+}
+
+
+/* LINKS */
+nav{
+  display: flex;
+  gap: 30px;
+}
+
+nav a{
+  text-decoration: none;
+  color: gray;
+  padding: 15px 20px;
+}
+nav a:hover{
+   color:#4f7cff
+}
+
+/* BOTONES */
+.btn{
+  background: #4f7cff;
+  color: white;
+
+  border: none;
+  padding: 15px 20px;
+
+  border-radius: 16px;
+}
+.btn:hover{
+   color: #07163d
+}
+
+
+.btn1{
+   background: transparent;
+
+   border: 1px solid gray;
+   color: gray;
+   border-radius: 16px;
+
+  padding: 15px 20px;
+  }
+.btn1:hover{
+   color:#4f7cff
+}
+
+.btn2{
+  background: transparent;
+
+  border: 1px solid white;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 16px;
+}
+.btn2:hover{
+   color:#4f7cff
+}
+
+/* HERO */
+.hero{
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 80px;
+
+  background: #07163d;
+
+  color: white;
+}
+
+ <!-- EPS STRIP -->
+.eps-strip{
+    width: 100%;
+    background: white;
+    padding: 25px 25px;
+}
+
+.eps-inner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 22px;
+}
+
+.eps-label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #001a4d;
+}
+
+.eps-logos{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.eps-chip{
+    color: gray;
+font-size: 17px;
+    font-weight: 500;
+  padding: 8px 16px;
+}
+
+.eps-chip:hover{
+    color: #4c6fff;
+}
+
+
+/* TEXTO */
+.hero-text{
+  width: 50%;
+}
+
+
+/* ETIQUETA */
+.badge{
+  background: #11a00e; 
+
+
+  color: white;
+
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+/* TITULO */
+.hero h1{
+  font-size: 60px;
+
+  margin-bottom: 20px;
+}
+
+
+/* PARRAFO */
+.hero p{
+  margin-bottom: 20px;
+
+  line-height: 1.6;
+}
+
+
+/* BOTONES */
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+
+
+/* IMAGEN */
+.hero-image img{
+  width: 280px;
+  margin-right: 120px;
+ animation: float 4s ease-in-out infinite;
+}
+.hero-frame {
+animation: float 4s ease-in-out infinite;
+}
+
+/* SECTION */
+.section{
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.section-header{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title{
+  font-size: 50px;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #4f7cff;
+  margin-bottom: 20px;
+}
+
+.section-sub{
+  font-size: 20px;
+  line-height: 1.4;
+  color:gray;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* GRID */
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+
+}
+
+/* CARD */
+.card{
+  align-items: center;
+  background: white;
+  border: 1px solid #e7ebf3;
+  border-radius: 20px;
+  padding: 28px;
+  min-height: 80px;
+  transition: 0.3s ease;
+}
+
+.card {
+  grid-column: span 2;
+}
+
+.card:nth-child(4) {
+  grid-column: 2 / 4;
+}
+
+.card:nth-child(5) {
+  grid-column: 4 / 6;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+}
+
+/* TITLES */
+.card h3{
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #07133b;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.card p{
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+  .card,
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    grid-column: span 1; /* ← resetea todo en tablet */
+  }
+}
+
+@media (max-width: 560px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+}
+  .section-title{
+    font-size: 32px;
+  }
+
+  .section-sub{
+    font-size: 16px;
+  }
+
+  .card h3{
+    font-size: 18px;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+
+  .card{
+    min-width: 20px;
+  }
+}
